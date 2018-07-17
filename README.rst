@@ -1,6 +1,7 @@
 ===================================
 Python Application Project Template
 ===================================
+Folked from gh:mdklatt/cookiecutter-python-app
 
 .. _travis: https://travis-ci.org/mdklatt/cookiecutter-python-app
 .. |travis.png| image:: https://travis-ci.org/mdklatt/cookiecutter-python-app.png?branch=py34
@@ -59,13 +60,13 @@ Usage
 
 Install Python requirements for using the template:
 
-.. code-block:: console
+.. code-block:: console in virtual env
 
-    $ python -m pip install --requirement=requirements.txt --user 
+    $ python -m pip install --requirement=requirements.txt
 
 
 Create a new project directly from the template on `GitHub`_:
 
 .. code-block:: console
    
-    $ cookiecutter gh:mdklatt/cookiecutter-python-app
+    $ cookiecutter gh:robinloxley1/cookiecutter-python-app

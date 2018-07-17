@@ -4,6 +4,7 @@ This module defines a global configuration object. Other modules should use
 this object to store application-wide configuration values.
 
 """
+import os
 from re import compile
 from yaml import safe_load
 
@@ -91,7 +92,7 @@ class YamlConfig(_AttrDict):
                 # excluded from replacement. A more elegant (but complex)
                 # approach would be to use PyYAML's various hooks to do the
                 # substitution as the file is parsed.
-                logger.info("reading config data from '{:s}'".format(path))
+                logger.info("reading config data from '{:s}'".format(os.path.abspath(path)))
                 yaml = regex.sub(replace, stream.read())
             data = safe_load(yaml)
             try:

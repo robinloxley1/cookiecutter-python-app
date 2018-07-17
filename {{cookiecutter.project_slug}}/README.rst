@@ -25,11 +25,13 @@ Optional Requirements
 Basic Setup
 ===========
 
+First create virtual environment.
+
 Install for the current user:
 
-.. code-block:: console
+.. code-block:: console in virtual environment
 
-    $ python setup.py install --user
+    $ python setup.py install
 
 
 Run the application:

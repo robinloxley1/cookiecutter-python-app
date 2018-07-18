@@ -15,7 +15,7 @@ dist/
 
 # Ignore virtualenv environments.
 
-.venv*/
+venv/
 
 
 # Ignore Vagrant runtime files.
@@ -36,3 +36,4 @@ nbproject/
 # Ignore OS metadata files.
 
 .DS_Store
+deploy/
